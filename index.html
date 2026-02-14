@@ -251,19 +251,22 @@
     // ====== Customize your love letter here ======
     const LOVE_LETTER = `
 My love,
-
 Happy Valentine’s Day ❤️
 
 I wanted to do something small but meaningful to tell you what my heart already knows—I choose you, every day.
+
 It’s been two years since we got married, and I still catch myself smiling when I think about us. The way you love me—steady, patient, and real—makes me feel safe in a way I never knew I needed. You’re not just my husband… you’re my best friend, my comfort, my calm, and my favorite person to come home to.
+
 Thank you for the little things you do that don’t always get noticed: the way you listen, the way you support me, the way you try, even on hard days. Thank you for being the kind of man who makes love feel like peace, not confusion. With you, I don’t have to pretend. I can just be me.
+
 I’m proud of us—of what we’ve built, what we’ve survived, and what we’re still becoming. And I’m excited for everything ahead: the dreams we’ll chase, the places we’ll go, the laughter we’ll keep collecting, and the life we’ll continue building side by side.
+
 If you ever forget how deeply you are loved, read this again:
 You are my heart. You are my home. You are my forever.
 
 Always yours,
 Your wife ❤️
-;
+`;
 
     // ====== Floating heart balloon generator ======
     const balloonsEl = document.getElementById("balloons");
@@ -382,16 +385,4 @@ Your wife ❤️
         s.animate(
           [{ transform: "translate(0,0) scale(1)" },
            { transform: `translate(${rand(-200,200)}px, ${rand(-180,220)}px) scale(0.2)` }],
-          { duration: rand(900, 1400), easing: "cubic-bezier(.2,.8,.2,1)" }
-        );
-
-        setTimeout(() => s.remove(), 1500);
-      }
-    });
-
-    // place the No button nicely at start
-    moveNoButton();
-  </script>
-</body>
-</html>
-
+          { duration
